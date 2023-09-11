@@ -167,7 +167,7 @@
   padding-right: 10px;
 }
 
-.header_section .headingThree span {
+.header_section .headingThree span, .footer_section .headingThree span{
   background: var(--gradient_pink);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -298,4 +298,116 @@
   right: -136px;
   bottom: -123px;
 }
-/* carrier style start */
+
+/* career style start */
+
+.career_section{
+  padding: 0px 240px;
+  background:var(--gradient_pink);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  /* margin-bottom: 120px; */
+  overflow-x: hidden;
+}
+.career_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.career_left h2{
+  padding-bottom: 24px;
+}
+.career_left .members_table{
+  line-height:40px;
+  padding-top: 32px;
+}
+.career_left .members_table tr{
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  font-weight: 600;
+}
+.career_left .members_table .locations{
+ 
+}
+.career_left button{
+  color: #F948B2;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.career_right{
+  height: 820px;
+  position: relative;
+}
+.career_right img{
+  object-fit: contain;
+  position: absolute;
+  right: -240px;
+
+}
+/* category style */
+.category_section{
+  padding:130px 240px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+.category_section .category a{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+}
+.category_section .category:hover a{
+  padding:8px;
+  border: 2px solid #0B0223;
+  border-radius: 50px;
+  color: #0B0223;
+  font-weight: 600;
+}
+/* .category_section .category p{
+  
+} */
+.category_section .category.clicked a{
+  padding:8px;
+  border: 2px solid #FF42A5;
+  color: #FF42A5;
+  border-radius: 50px;
+}
+
+/* footer section start */
+.footer_section{
+  padding:120px 240px;
+  background: #0B0223;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
+.footer_section .logo_area{
+  color: white;
+}
+.footer_nav{
+  display: flex;
+  gap: 60px;
+}
+.footer_nav .text_medium{
+  font-weight: 600;
+  color: white;
+}
+.footer_section .socials{
+  display: flex;
+  gap: 40px;
+}
+.footer_section .legals{
+  display: flex;
+  gap: 60px;
+}
+.footer_section .legals .text_sm{
+color: rgba(255, 255, 255, 0.60);
+}
+.footer_section .copyright{
+color: rgba(255, 255, 255, 0.60);
+  padding-top:28px;
+}
